@@ -1,0 +1,9 @@
+Flask
+httpx
+flask-cors
+cachetools
+requests
+pycryptodome
+protobuf
+google
+Werkzeug
