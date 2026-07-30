@@ -216,7 +216,11 @@ def refresh_all_tokens_endpoint():
 
 # Startup mein kuch initialize nahi karenge kyunki ab sab dynamic hai
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(
+        host='0.0.0.0',
+        port=int(os.environ.get("PORT", 5000)),
+        debug=False
+    )
 # INFO API SRC BYY :
 # POWERED BY : @STAR_GMR
 # CHANNEL : @STAR_METHODE
